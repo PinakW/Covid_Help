@@ -2,7 +2,8 @@ Tweepy_verified: [Server-side script]
 
 Simple script to extract Filtered tweets using tweepy's Streaming API.
 The script filters tweets which have data for verified sources of vital resources.
-The script can run forever but I have added a cap of 200 tweets after which the script will terminate with an option to send the collated data over mail to example@something.com
+Vital sources are filtered using keywords given in tweets_sequence
+The script can run forever in async mode but I have added a cap of 200 tweets after which the script will terminate with an option to send the collated data over mail to example@something.com
 Tweets and retweets are separated into two different CSV files
 ____________________________________________________________________________________________________________________________________________________________________
 query.py: [Client-side script]
