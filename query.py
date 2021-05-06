@@ -5,7 +5,7 @@ import sys
 def display_help():
     print("If you want to search for <resource>, run\npython query.py -l <resource> -c <csv file path>\nExample:\n\tpython query.py -l concentrator -c ./Retweets.csv\n")
 
-content_values=["bed","oxygen","medicine","remdecivir","ventilator","concentrator","icu","plasma","blood","food"]	#Keep them in lower case
+content_values=["bed","oxygen","medicine","remdecivir","ventilator","concentrator","icu","plasma","blood","food"]
 try:
     opts,args=getopt.getopt(sys.argv[1:],"hl:c:",["help","list=","csv="])
 except getopt.GetoptError:
@@ -23,6 +23,9 @@ for opt,arg in opts:
     elif opt in ("-c","--csv"):
         path=arg
         print("csv file being searched for:\t" + path)
+    else:
+        display_help()
+        quit()
 
 df = pd.read_csv(path)
 text = df['Tweet Details']
