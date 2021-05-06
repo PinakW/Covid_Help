@@ -6,6 +6,7 @@ The script can run forever but I have added a cap of 200 tweets after which the 
 Tweets and retweets are separated into two different CSV files
 ____________________________________________________________________________________________________________________________________________________________________
 query.py: [Client-side script]
+
 Tweepy_verified.py extracts a lot of data. We use query.py to extract specific details of a particular vital source.
 You can use following command to understand how query.py works:
 python query.py -h
