@@ -1,0 +1,10 @@
+Hi,
+
+This is an auto generated message from the twitter extractor script. For Delhi
+
+The Twitter extractor script has reached its limit of said tweets. In order to save space, please delete the CSV files present at /fac/proj_apps/pinakw/Covid_Help_Delhi and re-run the script.
+
+Attached are the csv files to be used in case any emergency arrives before re-initializing the script.
+
+Thanks,
+Twitter Extractor script
